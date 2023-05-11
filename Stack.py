@@ -33,3 +33,26 @@ class Stack:
         for char in self.items:
             count += 1
         return count
+
+# Membuat objek stack
+stack_buku = Stack()
+
+# Menambahkan sampah ke dalam stack
+buku_1 = buku("Buku Dongeng")
+stack_buku.push(buku_1)
+
+buku_2 = buku("Buku Pelajaran")
+stack_buku.push(buku_2)
+
+buku_3 = buku("Buku Masakan")
+stack_buku.push(buku_3)
+
+buku_4 = buku("Buku Tabungan")
+stack_buku.push(buku_4)
+
+buku_5 = buku("Buku Komik")
+stack_buku.push(buku_5)
+
+# Menampilkan ukuran stack
+ukuran_stack = stack_buku.size()
+print("Ukuran tumpukan buku: ",ukuran_stack)
